@@ -1,16 +1,19 @@
-const themeSelector = document.getElementById("Light/Dark").addEventListener("change", changeTheme)
+const themeSelector = document.getElementById("Light/Dark")
 console.log(themeSelector)
 
-function changeTheme(){
 
-    if ("Light/Dark" == "Dark")
-        document.body.classlist.add("Dark");
+function changeTheme() {
+    if ("Light/Dark" === "Dark")
+        var dark = document.getElementById("body")
+        body.classlist.add += "Dark"
+        logo.classlist.add +=  "Dark"
         console.log("Dark theme selected");
-        document.logo.classlist.add("Dark");
 
-    if ("Light/Dark" == "Light")
-            document.body.classlist.remove("Dark");
-            console.log("Light theme selected");
-            document.logo.classlist.remove("Dark");
-        
+
+    if ("Light/Dark" === "Light")
+        var light = document.getElementById("body")
+        body.classlist.remove += "Dark"
+        logo.classlist.remove += "Dark"
+        console.log("Light theme selected");
 }
+themeSelector.addEventListener("change", changeTheme);

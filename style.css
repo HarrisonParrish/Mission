@@ -34,11 +34,13 @@ li  {
   margin-right: 150px;
   margin-left: 80px;
   letter-spacing: -1px;
-  text-align: left; 
+  text-align: left;
+   
     }
-.dark{
+.Dark{
   background-color:#333;
+  color: #fff;
 }
-.dark h2 {
+.Dark h2 {
   color:#14a2ff;
 }
